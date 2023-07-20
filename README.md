@@ -25,6 +25,10 @@
 
 #### Step 3
 
+* If you want to choose a different version of php, so before "Step 4" you need to open  ".env.template" file and in the #php-container block you will need to replace PHP_DIR and PHP_VERSION parameters with the ones you need.
+
+#### Step 4
+
 * Run init script `./init.sh`
 * It will create .env for docker-compose and ask you to type some paths
 
@@ -40,12 +44,12 @@
 # File is downloaded.
 ```
 
-#### Step 4
+#### Step 5
 
 * Check .env file and correct it if need
 * In case you need cron put path to bitrix in `./images/php/cron.d/www`
 
-#### Step 5
+#### Step 6
 
 * Build the docker
 
@@ -57,11 +61,8 @@ docker-compose up --build -d
 
 ---
 
-#### Step 6
+#### Step 7
 
 * Install bitrix in public directory as you wish
 
 
-#### Step 7
-
-* If you want to choose a different version of php, so before "Step 5" you need to open  ".env.template" file and in the #php-container block you will need to replace PHP_DIR and PHP_VERSION parameters with the ones you need.
